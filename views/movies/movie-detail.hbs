@@ -1,0 +1,17 @@
+
+<h1> Detalles</h1>
+            <h3>Película: {{movies.title}}</h3>
+            <h4>Género: {{movies.genre}}</h4>
+            <h5>Res {{movies.plot}}</h5>
+            <h5>Cast
+                {{#each movies.cast}}
+                {{name}}
+                {{occupation}}
+                {{catchPhrase}}
+                {{/each}}
+            </h5>
+        
+        <form action="/movies/{{movies._id}}/delete" method="POST" style="display: inline">
+            <input type="submit" value="Eliminar Movie" class="btn btn-danger">
+        </form>
+        <a href="/movies/{{movies._id}}/edit" class="btn btn-warning">Editar movie</a>
