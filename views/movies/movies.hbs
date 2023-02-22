@@ -1,4 +1,4 @@
-
+<h2>Movies</h2>
 <div class="row">
     {{#each movies}}
     <div class="class col-xl-3 display: flex, justify-content: center">
@@ -8,6 +8,7 @@
             <h4>Género : {{genre}}</h4>
             <h5>Tipo: {{plot}}</h5>
             <h5>Actores : {{#each cast}} {{name}} {{/each}} </h5>
+            <h5>Id: {{_id}}</h5>
             <p>
                 <a href="/movies/{{_id}}">Detalles</a>
             </p>

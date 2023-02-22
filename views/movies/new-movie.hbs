@@ -15,13 +15,13 @@
                     <input type="text" class="form-control" id="genre" name="genre">
                 </div>
                 <div class="mb-3">
-                    <label for="plot" class="form-label">Gráfico</label>
+                    <label for="plot" class="form-label">Plot</label>
                     <input type="text" class="form-control" id="plot" name="plot">
                 </div>
                 <div class="mb-3">
-                    <label for="cast" class="form-label">Actores/Celebritis</label>
+                    <label for="cast" class="form-label">Actores/Celebrities</label>
 
-                    <select multiple class="form-select" name="cast">
+                    <select name="cast" id="cast">s
                         {{#each celebrities}}
                         <option value="{{_id}}">{{name}}</option>
                         {{/each }}
